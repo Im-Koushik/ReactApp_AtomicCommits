@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{FC} from 'react';
 import './App.css';
 
-function App() {
-  const name = "Sachin";
+interface Props{
+  name:string
+}
+
+const App:FC<Props>=({name})=> {
   return (
     <div>
       <h1>Hello, {name}!</h1>
